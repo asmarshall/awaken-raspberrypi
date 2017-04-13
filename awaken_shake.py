@@ -35,6 +35,10 @@ def callback(message, channel):
     settv(message.get("action"))
     loadpage(message.get("url"))
 
+pubnub.subscribe(
+    channel,
+    callback=callback)
+
 def settv(check):
   if check == False:
     import os
