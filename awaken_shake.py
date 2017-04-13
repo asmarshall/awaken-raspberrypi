@@ -23,6 +23,7 @@ resp = requests.get(url=url)
 data = json.loads(resp.text)
 pschannel = data["channel"]
 psurl = data["url"]
+loadpage(psurl);
 
 pubnub = Pubnub(
         subscribe_key = 'sub-c-e99cc9a0-1bce-11e7-a9ec-0619f8945a4f',
@@ -48,7 +49,7 @@ def settv(check):
 def loadpage(url):
   import os
   import webbrowser
-  import shlex, subprocess
+
 
   urltrue = url
   os.system("export DISPLAY=:0.0")
