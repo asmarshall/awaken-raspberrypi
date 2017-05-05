@@ -1,8 +1,8 @@
-# Awaken - Raspberry Pi Integratio
+# Awaken - Raspberry Pi
 
-This python doc was written to work with the awaken.com web browser. 
+Python script written for hardware that integrates with the Awaken web app. Find the site at http://awakenapp.herokuapp.com/.
 
-instructions:
+## Instructions:
 1. Place python doc in pi
 2. Edit autostart file to run awaken.py
 3. reboot raspberry pi
